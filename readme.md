@@ -39,7 +39,7 @@
 
 
 ### How Spring security Works
-![pic](docs/security_diagram.png)
+![pic](src/main/java/com/example/springsecuritydemo/docs/security_diagram.png)
 * when request comes in, it goes through multiple layer of Filter Chain before reaching to Controller
 * Authentication filter is one layer of them (if your project has authentication configured)
 * Will understand rest of the flow on the way
@@ -261,7 +261,7 @@ spring:
 <br>
 
 #### 6. JWT based Authentication
-![pic](docs/jwt.png)
+![pic](src/main/java/com/example/springsecuritydemo/docs/jwt.png)
    * Login request is sent from user to server with username and password
    * Server will validate credential and generate token if credential is valid. token is returned to the user
    * Next time, any request done by user will be sent with the token, not username and password. Token will give you access to the endpoints if allowed
