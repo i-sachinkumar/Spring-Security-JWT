@@ -371,16 +371,8 @@ spring:
    3. `AuthTokenFilter.java` class
         * filters incoming request to check for a valid JWT, setting authentication context if token is valid
         * Extracts JWT from request header, validate it, and configures the spring security context with user details is it is valid
-   
-    
-
-#### YouTube playlist I followed: https://www.youtube.com/watch?v=CTdPnaWmSuY&list=PLxhSr_SLdXGOpdX60nHze41CvExvBOn09
-
-#### Article on medium:
-https://medium.com/@nagarjun_nagesh/role-based-authorization-in-spring-boot-e8bc8a88bd00
-
+      
 
 * ### Roles and Authorities:
-
   Roles are high-level groupings that represent a set of authorities. Authorities, in turn, define the specific permissions granted to users with a certain role.
 
