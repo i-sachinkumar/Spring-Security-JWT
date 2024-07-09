@@ -1,0 +1,45 @@
+server:
+  port: 3030
+
+
+#security:
+#  jwt:
+#    secret-key: "jwttokensthatshouldbechangedproductiondfhbrkjrwrkjffnterimaakichubehenkelodakjdfnekjgjekgbebrgjherbgjrgbgjgdjgzfjggjhdfbgjfhbsfjgsyfgwuygeuyeguwfWIUEQE8REYTI7343TRWRGUHFGSYUGRUYGFSHJBFJJSDBFUYGFWUYGWRU7353485648746238436587345B87VEUVYGVFHDFBHFBEHFEVFHHSBHSDBVBHJHJBhjbjhdgjrhgsjvbfjhgbjhg"
+
+spring:
+  application:
+    name: SpringSecurityDemo
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/demo
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+app:
+  jwt:
+    jwtSecret: jwtSecretdfghjklfdfcgvhbjnklzxdcvbnmhithisissecretkeythatshouldnotbeguessedeasilytrytoaddverycomplexsecretkey
+    jwtExpirationMS: 360000
+
+
+logging:
+  level.org.springframework: DEBUG
+  level.org.hibernate.SQL: DEBUG
+  level.org.springframework.security: DEBUG
+  level.com.example.securitydemo: DEBUG
+
+
+#app:
+#  firebase-configuration-file : apostle-c4f90-firebase-adminsdk-70jre-780917d1eb.json
+
+
